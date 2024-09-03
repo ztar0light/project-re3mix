@@ -52,7 +52,7 @@ We welcome contributions from the community! If you have ideas for improvement o
 3. Commit your changes.
 4. Submit a pull request for review.
 
-Alternatively you can also get a ticket in the discord server
+Alternatively you can also get a ticket in the [Discord server](https://discord.gg/M5gQ7JBbPh)
 
 ## License
 
