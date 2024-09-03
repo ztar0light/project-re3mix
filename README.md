@@ -1,30 +1,30 @@
 # Project VOXY: CoreXY Conversion for Ender 3-Based Printers
 
-**Project VOXY** is an open-source initiative designed to convert Ender 3-based 3D printers into CoreXY systems. This mod leverages mostly stock parts, supplemented by off-the-shelf 6mm GT2 belt systems and 3D-printable components. Inspired by the Voron 2.4, Project VOXY offers an affordable solution for serious rapid prototyping and development.
+**Project VOXY** is an open-source initiative designed to convert Ender 3-based 3D printers into CoreXY systems. This mod leverages mostly stock parts, supplemented by off-the-shelf 6mm GT2 belt systems and 3D-printable components. Inspired by the Voron 2.4, Project VOXY offers an affordable solution for serious rapid prototyping and development or printing in general.
 
 ## Features
 
 - **CoreXY Kinematics**: Elevate your 3D printer's capabilities with CoreXY mechanics, allowing for faster and more accurate prints.
 - **Belt-Driven Z-Axis**: A cost-effective, single motor system drives the Z-axis for smoother operation.
-- **Integrated Enclosure**: Designed for easy customization, with clear tarp options for affordability, improving print quality by maintaining a stable environment.
-- **Flexible Firmware Options**: Compatible with both Marlin and Klipper, providing advanced features like input shaping.
-- **Modular Design**: Easily upgradeable, with support for high-temp hotends, BLTouch, dual Z-axis, and more.
+- **Integrated Enclosure**: Designed for easy customization, with option part to hold up clear tarp to act as an enclosure while being transparent and affordability, improving print quality by maintaining a stable environment.
+- **Flexible Firmware Options**: Still compatible with Marlin and Klipper, which can providing advanced features like input shaping to bring out hte true potential.
+- **Modular Design**: Easily upgradeable, with support for stock, V6, Volcano and Spider hotends, BLTouch, and more.
 
 ## Getting Started
 
 ### Prerequisites
 
 - **Compatible 3D Printer**: Ender 3, Ender 3 Pro, Ender 3 V2, or similar.
-- **Firmware**: Marlin or Klipper.
-- **Materials Needed**: PETG filament, 6mm GT2 belts, pulleys, and optional linear rails.
+- **Motherboard**: Stock/BTT SKR E3 V3 with a Pi4 B 
+- **Materials Needed**: PETG/+ filament, 6mm GT2 belts, pulleys, aluminum extrusions and optional but highly recommened linear rails.
 
 ### Parts List
 
-- **Belts & Pulleys**: Standard 6mm GT2 belts and pulleys.
+- **Belts & Pulleys**: Standard 6mm GT2 belts and pulleys (xflat, x teeth).
 - **Printed Components**: Available in the `/STL` folder.
 - **Linear Rails** (optional): Recommended for enhanced stability, particularly on the X-axis.
 - **Electronics**:
-  - NEMA 17 stepper motors (stock).
+  - NEMA 17 stepper motors (from stock printer).
   - Raspberry Pi (if running Klipper).
   - BLTouch (optional for automatic bed leveling).
 
@@ -34,10 +34,9 @@
 2. **Modify Frame**: Follow the provided instructions to reposition Z extrusions and prepare the frame for CoreXY setup.
 3. **Install Belts**: Use the provided diagrams to install the GT2 belts and pulleys.
 4. **Firmware Configuration**:
-   - For Marlin: Use the provided configuration files.
-   - For Klipper: Set up the Raspberry Pi and flash the appropriate firmware.
-5. **Assemble Enclosure**: Optionally, create the enclosure using clear tarp or other materials.
-
+   - For Marlin: Use the provided configuration files and or modify to suit your need.
+   - For Klipper: Set up the Raspberry Pi and flash the appropriate firmware and web interface.
+5. **(Optional) Assemble Enclosure**: Optionally, create the enclosure using clear tarp or other materials and the bracket and mounts provided in `/STL`.
 ## Usage
 
 After completing the conversion, your printer will operate as a CoreXY system. For optimal performance:
@@ -52,6 +51,8 @@ We welcome contributions from the community! If you have ideas for improvement o
 2. Create a new branch for your feature or bug fix.
 3. Commit your changes.
 4. Submit a pull request for review.
+
+Alternatively you can also get a ticket in the discord server
 
 ## License
 
