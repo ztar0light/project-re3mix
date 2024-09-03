@@ -1,47 +1,62 @@
-CoreXY Conversion for Ender 3 and clones
-This open-source project aims to convert Voxelab Aquila X2 and other Ender 3-based 3D printers into CoreXY systems. The mod uses mostly stock parts combined with off-the-shelf 6mm GT2 belt systems and 3D-printable components. This project is inspired by the Voron 2.4 design, offering an affordable solution for serious rapid prototyping and development.
+# Project VOXY: CoreXY Conversion for Ender 3-Based Printers
 
-Features
-CoreXY Kinematics: Achieve higher print speeds and better precision by converting your Voxelab Aquila X2 or Ender 3 into a CoreXY system.
-Belt-Driven Z-Axis: A single motor drives the Z-axis, providing smoother movement and reducing costs.
-Integrated Enclosure: Built-in enclosure options using clear tarp for affordability, enhancing print quality by maintaining stable environmental conditions.
-Customizable Firmware: Supports both Marlin and Klipper, allowing for advanced features like input shaping.
-Designed for Modularity: The design allows for easy upgrades, including high-temp hotends, BLTouch, dual Z-axis, and more.
-Getting Started
-Prerequisites
-3D Printer: Voxelab Aquila X2, Ender 3, or a similar Ender 3-based printer.
-Firmware: Marlin or Klipper (depending on your setup).
-Materials: PETG filament for printed parts, standard 6mm GT2 belts, pulleys, linear rails (optional).
-Parts List
-Belts & Pulleys: 6mm GT2 belts, appropriate pulleys.
-Printed Parts: Available in the /STL directory.
-Linear Rails (optional): For enhanced stability, especially for the X-axis.
-Electronics:
-Stock stepper motors (NEMA 17).
-Raspberry Pi (for Klipper, if needed).
-BLTouch (optional for automatic bed leveling).
-Assembly Instructions
-Disassembly: Remove existing components as required to prepare for the CoreXY conversion.
-Frame Modification: Follow the instructions to modify the frame, including the relocation of Z extrusions.
-Belt Installation: Install the GT2 belts and pulleys according to the provided diagrams.
-Firmware Setup:
-For Marlin: Use the provided configuration files.
-For Klipper: Set up the Raspberry Pi and flash the firmware.
-Enclosure: Assemble the optional enclosure using clear tarp and other provided materials.
-Usage
-Once assembled, your printer will function as a CoreXY system. For best results:
+**Project VOXY** is an open-source initiative designed to convert Ender 3-based 3D printers into CoreXY systems. This mod leverages mostly stock parts, supplemented by off-the-shelf 6mm GT2 belt systems and 3D-printable components. Inspired by the Voron 2.4, Project VOXY offers an affordable solution for serious rapid prototyping and development.
 
-Calibrate the bed using BLTouch or manual leveling.
-Tune print settings: Adjust speeds, acceleration, and input shaping (if using Klipper) for optimal performance.
-Contributing
-We welcome contributions from the community! Whether it's improving the design, enhancing documentation, or adding new features, your input is valuable.
+## Features
 
-Fork the repository.
-Create a new branch.
-Make your changes.
-Submit a pull request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+- **CoreXY Kinematics**: Elevate your 3D printer's capabilities with CoreXY mechanics, allowing for faster and more accurate prints.
+- **Belt-Driven Z-Axis**: A cost-effective, single motor system drives the Z-axis for smoother operation.
+- **Integrated Enclosure**: Designed for easy customization, with clear tarp options for affordability, improving print quality by maintaining a stable environment.
+- **Flexible Firmware Options**: Compatible with both Marlin and Klipper, providing advanced features like input shaping.
+- **Modular Design**: Easily upgradeable, with support for high-temp hotends, BLTouch, dual Z-axis, and more.
 
-Acknowledgments
-Special thanks to the Voron community for inspiration and to all contributors who make this project possible.
+## Getting Started
+
+### Prerequisites
+
+- **Compatible 3D Printer**: Ender 3, Ender 3 Pro, Ender 3 V2, or similar.
+- **Firmware**: Marlin or Klipper.
+- **Materials Needed**: PETG filament, 6mm GT2 belts, pulleys, and optional linear rails.
+
+### Parts List
+
+- **Belts & Pulleys**: Standard 6mm GT2 belts and pulleys.
+- **Printed Components**: Available in the `/STL` folder.
+- **Linear Rails** (optional): Recommended for enhanced stability, particularly on the X-axis.
+- **Electronics**:
+  - NEMA 17 stepper motors (stock).
+  - Raspberry Pi (if running Klipper).
+  - BLTouch (optional for automatic bed leveling).
+
+### Assembly Instructions
+
+1. **Disassemble**: Remove necessary components from your printer.
+2. **Modify Frame**: Follow the provided instructions to reposition Z extrusions and prepare the frame for CoreXY setup.
+3. **Install Belts**: Use the provided diagrams to install the GT2 belts and pulleys.
+4. **Firmware Configuration**:
+   - For Marlin: Use the provided configuration files.
+   - For Klipper: Set up the Raspberry Pi and flash the appropriate firmware.
+5. **Assemble Enclosure**: Optionally, create the enclosure using clear tarp or other materials.
+
+## Usage
+
+After completing the conversion, your printer will operate as a CoreXY system. For optimal performance:
+- **Level the bed** using a BLTouch or manual mesh leveling.
+- **Tune print settings**: Adjust print speeds, acceleration, and input shaping if using Klipper.
+
+## Contributing
+
+We welcome contributions from the community! If you have ideas for improvement or new features, please follow these steps:
+
+1. Fork this repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes.
+4. Submit a pull request for review.
+
+## License
+
+Project VOXY is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+Thanks to the Voron community for their inspiration, and to all contributors who have helped make Project VOXY a reality.
