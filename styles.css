@@ -1,0 +1,324 @@
+:root {
+    --primary-color: #FF007F; /* Hot Pink */
+    --secondary-color: #FF85B3; /* Lighter Pink */
+    --secondary-color-dark: #C5005A; /* Darker Pink */
+    --background-light: #ffffff;
+    --background-dark: #121212;
+    --text-light: #000000;
+    --text-dark: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+}
+
+    body.dark-mode {
+        background-color: var(--background-dark);
+        color: var(--text-dark);
+    }
+
+    /* Custom Scrollbar */
+    body::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 0, 127, 0.6);
+        border-radius: 10px;
+    }
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 0, 127, 0.6) transparent;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+/* Centered Content for Docs and Contribute */
+.centered-content {
+    text-align: center;
+}
+
+/* Shortened Section Above Contact */
+.shortened-section {
+    padding: 40px 20px; /* Make this section shorter */
+}
+
+/* Theme Toggle Button */
+.theme-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+    .theme-button:hover {
+        background-color: white;
+        color: var(--primary-color);
+        transform: scale(1.05);
+    }
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+/* Features Section */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: var(--secondary-color);
+}
+
+    .features-grid .feature-item {
+        padding: 40px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        color: var(--primary-color);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+        .features-grid .feature-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .features-grid .feature-item:hover {
+            transform: translateY(-10px);
+            background-color: var(--secondary-color-dark);
+            color: white;
+        }
+
+/* Feature Details */
+#feature-details {
+    display: none;
+    padding: 80px 20px;
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+.feature-detail-content {
+    display: none;
+    padding: 40px;
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    border-radius: 10px;
+    text-align: left;
+}
+
+body.dark-mode #feature-details {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+/* Voxy Blog Section */
+.voxy-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: var(--background-light);
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .blog-post img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+        .blog-post img:hover {
+            transform: scale(1.05);
+        }
+
+    .blog-post p {
+        font-size: 1.2rem;
+        color: black; /* Make the text black */
+    }
+
+body.dark-mode .blog-post p {
+    color: var(--text-dark);
+}
+
+/* Contribute Section */
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+    .social-buttons a {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        background-color: var(--primary-color);
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+        .social-buttons a:hover {
+            background-color: var(--secondary-color-dark);
+            transform: translateY(-3px);
+        }
+
+.divider {
+    height: 25px;
+    width: 2px;
+    background-color: white;
+}
+
+/* Contact Us Section */
+#contact {
+    padding: 80px 20px;
+    background-color: var(--secondary-color-dark);
+    color: white;
+    border-radius: 10px;
+}
+
+    #contact form {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+.form-group {
+    position: relative;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+body.dark-mode #contact input,
+body.dark-mode #contact textarea {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+#contact textarea {
+    resize: none;
+    height: 150px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    .cta-button:hover {
+        background-color: var(--secondary-color-dark);
+        transform: scale(1.05);
+    }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}

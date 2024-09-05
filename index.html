@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Voxy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo"></div>
+                <span class="logo-text">Project Voxy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#voxy">Voxy</a></li>
+                <li><a href="#docs">Documentation</a></li>
+                <li><a href="#contribute">Contribute</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle-btn" class="theme-button">🌞 Light / 🌜 Dark</button>
+    </header>
+
+    <section id="home">
+        <div class="hero" data-aos="fade-in">
+            <h1>Project Voxy</h1>
+            <p>Enhancing your development experience.</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <h2 data-aos="fade-up">Features</h2>
+        <div class="features-grid">
+            <div class="feature-item" id="feature1" onclick="showFeatureDetails(1)" data-aos="fade-right">
+                <img src="assets/feature1.jpg" alt="Cheap Feature">
+                <p>Cheap</p>
+            </div>
+            <div class="feature-item" id="feature2" onclick="showFeatureDetails(2)" data-aos="fade-right">
+                <img src="assets/feature2.jpg" alt="Easy Feature">
+                <p>Easy</p>
+            </div>
+            <div class="feature-item" id="feature3" onclick="showFeatureDetails(3)" data-aos="fade-right">
+                <img src="assets/feature3.jpg" alt="Open-source Feature">
+                <p>Open-source</p>
+            </div>
+            <div class="feature-item" id="feature4" onclick="showFeatureDetails(4)" data-aos="fade-right">
+                <img src="assets/feature4.jpg" alt="Re-using Printer Feature">
+                <p>Re-using Printer</p>
+            </div>
+            <div class="feature-item" id="feature5" onclick="showFeatureDetails(5)" data-aos="fade-right">
+                <img src="assets/feature5.jpg" alt="Core XY Feature">
+                <p>Core XY</p>
+            </div>
+            <div class="feature-item" id="feature6" onclick="showFeatureDetails(6)" data-aos="fade-right">
+                <img src="assets/feature6.jpg" alt="Enclosure Feature">
+                <p>Enclosure</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Details Section -->
+    <section id="feature-details">
+        <div class="feature-detail-content" id="feature-detail-1">
+            <h2>Cheap</h2>
+            <p>Affordable 3D printing solutions without compromising on quality.</p>
+        </div>
+        <div class="feature-detail-content" id="feature-detail-2">
+            <h2>Easy</h2>
+            <p>Intuitive setup and operation, perfect for beginners and professionals alike.</p>
+        </div>
+        <div class="feature-detail-content" id="feature-detail-3">
+            <h2>Open-source</h2>
+            <p>Completely open-source, allowing you to modify and improve the design.</p>
+        </div>
+        <div class="feature-detail-content" id="feature-detail-4">
+            <h2>Re-using Printer</h2>
+            <p>Repurpose old or broken 3D printers to extend their usability.</p>
+        </div>
+        <div class="feature-detail-content" id="feature-detail-5">
+            <h2>Core XY</h2>
+            <p>Utilizes Core XY mechanics for high precision and stability in 3D printing.</p>
+        </div>
+        <div class="feature-detail-content" id="feature-detail-6">
+            <h2>Enclosure</h2>
+            <p>Fully enclosed design ensures safety, temperature control, and print consistency.</p>
+        </div>
+    </section>
+
+    <!-- Voxy Blog Section -->
+    <section id="voxy">
+        <h2 data-aos="fade-up">Voxy Blog</h2>
+        <div class="voxy-blog">
+            <article class="blog-post" data-aos="fade-up">
+                <img src="assets/voxy1.jpg" alt="Voxy 1">
+                <p><strong>Voxy 1</strong>: This is a detailed post about the first iteration of the Voxy printer, including challenges and successes along the way...</p>
+            </article>
+            <article class="blog-post" data-aos="fade-up">
+                <img src="assets/voxy2.jpg" alt="Voxy 2">
+                <p><strong>Voxy 2</strong>: Learn about how we improved the design of the Voxy 2, adding more features for better performance...</p>
+            </article>
+            <article class="blog-post" data-aos="fade-up">
+                <img src="assets/voxy3.jpg" alt="Voxy 3">
+                <p><strong>Voxy 3</strong>: Explore the Core XY mechanics and its impact on precision and speed in the third iteration of Voxy...</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="docs" class="centered-content">
+        <h2 data-aos="fade-up">Documentation</h2>
+        <div class="docs-content" data-aos="fade-up">
+            <p>Placeholder for documentation content.</p>
+        </div>
+    </section>
+
+    <section id="contribute" class="centered-content shortened-section">
+        <h2 data-aos="fade-up">Contribute</h2>
+        <div class="contribute-content" data-aos="fade-up">
+            <p>Placeholder for contribution guidelines.</p>
+            <div class="social-buttons">
+                <a href="https://discord.com" class="discord-btn" target="_blank">Join Discord</a>
+                <span class="divider"></span>
+                <a href="https://github.com" class="github-btn" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 data-aos="fade-up">Contact Us</h2>
+        <form data-aos="fade-up">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Project Voxy. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

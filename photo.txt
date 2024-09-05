@@ -1,0 +1,37 @@
+Placeholder Photo List:
+
+1. Location: assets/voxy1.jpg
+   Suggested Name: "voxy1.jpg"
+   Photo Idea: An image of the first Voxy printer prototype on a clean workspace or close-up of key components like the extruder.
+
+2. Location: assets/voxy2.jpg
+   Suggested Name: "voxy2.jpg"
+   Photo Idea: Show the second version of the Voxy printer with improvements or upgrades, like a new frame or better cable management.
+
+3. Location: assets/voxy3.jpg
+   Suggested Name: "voxy3.jpg"
+   Photo Idea: Highlight Core XY mechanics in action with a focus on the printer's moving parts.
+
+4. Location: assets/feature1.jpg
+   Suggested Name: "feature1.jpg"
+   Photo Idea: An image illustrating the affordability aspect, like a low-cost filament or 3D-printed object from Voxy.
+
+5. Location: assets/feature2.jpg
+   Suggested Name: "feature2.jpg"
+   Photo Idea: Demonstrate ease of use—maybe an image of simple assembly instructions or someone using the printer interface.
+
+6. Location: assets/feature3.jpg
+   Suggested Name: "feature3.jpg"
+   Photo Idea: Showcase the open-source nature, such as the Voxy GitHub page on a screen with code in the background.
+
+7. Location: assets/feature4.jpg
+   Suggested Name: "feature4.jpg"
+   Photo Idea: Show how old or broken printers are repurposed, like a photo of different parts being reused.
+
+8. Location: assets/feature5.jpg
+   Suggested Name: "feature5.jpg"
+   Photo Idea: Highlight Core XY mechanics, emphasizing movement precision.
+
+9. Location: assets/feature6.jpg
+   Suggested Name: "feature6.jpg"
+   Photo Idea: Showcase the enclosed design, focusing on the printer's protective casing.
