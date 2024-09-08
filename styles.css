@@ -6,42 +6,57 @@
     --background-dark: #121212;
     --text-light: #000000;
     --text-dark: #ffffff;
+    --text-blog: #000000;
+    --grey-light: #3A3A3A;
+    --grey-dark: #1F1F1F;
 }
 
-body {
-    margin: 0;
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: var(--background-light);
-    color: var(--text-light);
-    transition: all 0.3s ease;
-    overflow-x: hidden;
+/* Global Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
 }
 
-    body.dark-mode {
-        background-color: var(--background-dark);
-        color: var(--text-dark);
-    }
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
 
-    /* Custom Scrollbar */
-    body::-webkit-scrollbar {
-        width: 6px;
-    }
-
-    body::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    body::-webkit-scrollbar-thumb {
-        background-color: rgba(255, 0, 127, 0.6);
-        border-radius: 10px;
-    }
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 0, 127, 0.7);
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
 
 body {
     scrollbar-width: thin;
-    scrollbar-color: rgba(255, 0, 127, 0.6) transparent;
+    scrollbar-color: rgba(255, 0, 127, 0.7) rgba(0, 0, 0, 0.1);
 }
 
-/* Header Styles */
+/* Light Mode */
+body {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+    /* Dark Mode */
+    body.dark-mode {
+        background-color: var(--grey-dark);
+        color: var(--text-dark);
+    }
+
+        body.dark-mode .logo-container {
+            background-color: transparent;
+        }
+
+        body.dark-mode .hero {
+            background-color: var(--grey-light);
+        }
+
+        body.dark-mode .logo-text {
+            background-color: transparent;
+        }
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -49,7 +64,6 @@ header {
     padding: 20px;
     background-color: var(--primary-color);
     color: white;
-    position: relative;
 }
 
 .logo-container {
@@ -70,6 +84,37 @@ header {
     font-size: 1.5rem;
 }
 
+/* Blog Section with Horizontal Scroll for Images */
+.voxy-blog {
+    padding: 50px 20px;
+    background-color: var(--background-light);
+}
+
+.blog-post {
+    margin-bottom: 30px;
+}
+
+    .blog-post p {
+        font-size: 1.2rem;
+        color: black;
+    }
+
+.blog-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    max-height: 300px;
+}
+
+    .blog-images img {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+body.dark-mode .blog-post p {
+    color: var(--text-blog);
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -86,33 +131,24 @@ header {
             color: var(--secondary-color);
         }
 
-/* Centered Content for Docs and Contribute */
-.centered-content {
-    text-align: center;
-}
-
-/* Shortened Section Above Contact */
-.shortened-section {
-    padding: 40px 20px; /* Make this section shorter */
-}
-
-/* Theme Toggle Button */
+/* Restyled Theme Toggle Button */
 .theme-button {
     position: absolute;
     top: 20px;
     right: 20px;
-    padding: 10px 20px;
-    border: 2px solid white;
-    background-color: var(--primary-color);
-    color: white;
+    padding: 12px 24px;
+    border: 2px solid var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
 }
 
     .theme-button:hover {
-        background-color: white;
-        color: var(--primary-color);
+        background-color: var(--primary-color);
+        color: white;
         transform: scale(1.05);
     }
 
@@ -120,7 +156,8 @@ header {
 .hero {
     text-align: center;
     padding: 150px 20px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background-size: cover;
+    background-position: center;
     color: white;
 }
 
@@ -185,45 +222,17 @@ header {
     text-align: left;
 }
 
-body.dark-mode #feature-details {
-    background-color: var(--background-dark);
-    color: var(--text-dark);
-}
-
-/* Voxy Blog Section */
-.voxy-blog {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 50px 20px;
-    background-color: var(--background-light);
-}
-
-.blog-post {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-    .blog-post img {
+    .feature-detail-content img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-        transition: transform 0.3s ease;
+        margin-bottom: 15px;
     }
 
-        .blog-post img:hover {
-            transform: scale(1.05);
-        }
-
-    .blog-post p {
-        font-size: 1.2rem;
-        color: black; /* Make the text black */
-    }
-
-body.dark-mode .blog-post p {
-    color: var(--text-dark);
+body.dark-mode #feature-details {
+    background-color: var(--grey-dark);
 }
+
 
 /* Contribute Section */
 .social-buttons {
@@ -247,12 +256,6 @@ body.dark-mode .blog-post p {
             background-color: var(--secondary-color-dark);
             transform: translateY(-3px);
         }
-
-.divider {
-    height: 25px;
-    width: 2px;
-    background-color: white;
-}
 
 /* Contact Us Section */
 #contact {
@@ -286,7 +289,7 @@ body.dark-mode .blog-post p {
 
 body.dark-mode #contact input,
 body.dark-mode #contact textarea {
-    background-color: var(--background-dark);
+    background-color: var(--grey-light);
     color: var(--text-dark);
 }
 
