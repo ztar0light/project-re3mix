@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Voxy</title>
+    <title>Project R_E3_MIX</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/favicon.ico"> <!-- Favicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
@@ -12,13 +12,17 @@
     <header>
         <nav>
             <div class="logo-container">
-                <img src="assets/logo.jpg" alt="Project Voxy Logo" class="logo"> <!-- Logo in .jpg -->
-                <span class="logo-text">Project Voxy</span>
+                <img src="assets/logo.jpg" alt="Project RE3MIX Logo" class="logo"> <!-- Logo -->
+                <span class="logo-text">Project R_E3_MIX</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#voxy">Voxy</a></li>
+                <li><a href="#features">Why</a></li>
+                <li><a href="#voxy">Voxy Blog</a></li>
+                <li><a href="#requirements">Requirements</a></li>
+                <li><a href="#needed-parts">Needed Parts</a></li>
+                <li><a href="#finished-info">Finished Info</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#docs">Documentation</a></li>
                 <li><a href="#contribute">Contribute</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -29,13 +33,13 @@
 
     <section id="home">
         <div class="hero" data-aos="fade-in" style="background-image: url('assets/hero-background.jpg');">
-            <h1>Project Voxy</h1>
-            <p>Re-defining what an Ender 3 can be!</p>
+            <h1>Project R_E3_MIX</h1>
+            <p>Re-defining what an Ender 3 (and clones) can be!</p>
         </div>
     </section>
 
-    <section id="features">
-        <h2 data-aos="fade-up">Features</h2>
+    <section id="Features">
+        <h2 data-aos="fade-up">Why</h2>
         <div class="features-grid">
             <div class="feature-item" id="feature1" onclick="showFeatureDetails(1)" data-aos="fade-right">
                 <img src="assets/feature1.jpg" alt="Cheap Feature">
@@ -98,31 +102,68 @@
         </div>
     </section>
 
-    <!-- Voxy Blog Section with Scrolling Photos in Each Post -->
+    <!-- RE3MIX Blog Section with Scrolling Photos in Each Post -->
     <section id="voxy">
         <h2 data-aos="fade-up">Voxy Blog</h2>
         <div class="voxy-blog">
             <article class="blog-post" data-aos="fade-up">
-                <p><strong>Voxy 1</strong>: Obtaining the Voxy. Voxy is actually a Voxelab Aquila X2, an Ender 3 v2 clone.</p>
+                <p><strong>Update 1</strong>: Obtaining the VOXY. VOXY is based on the Voxelab Aquila X2, an Ender 3 v2 clone.</p>
                 <div class="blog-images">
-                    <img src="assets/voxy1.jpg" alt="Voxy 1 Image 1">
-                    <img src="assets/voxy-extra1.jpg" alt="Voxy 1 Image 2"> <!-- Additional images -->
+                    <img src="assets/voxy1.jpg" alt="VOXY 1 Image 1">
+                    <img src="assets/voxy-extra1.jpg" alt="VOXY 1 Image 2"> <!-- Additional images -->
                 </div>
             </article>
             <article class="blog-post" data-aos="fade-up">
-                <p><strong>Voxy 2</strong>: Voxy getting upgrades and core-xy prototype frame.</p>
+                <p><strong>Update 2</strong>: VOXY getting upgrades and core-xy prototype frame.</p>
                 <div class="blog-images">
-                    <img src="assets/voxy2.jpg" alt="Voxy 2 Image 1">
-                    <img src="assets/voxy-extra2.jpg" alt="Voxy 2 Image 2">
+                    <img src="assets/voxy2.jpg" alt="VOXY 2 Image 1">
+                    <img src="assets/voxy-extra2.jpg" alt="VOXY 2 Image 2">
                 </div>
             </article>
             <article class="blog-post" data-aos="fade-up">
-                <p><strong>Voxy 3</strong>: WIP... Prob gonna do an Ender 3 S1 next</p>
+                <p><strong>Update 3</strong>: WIP... Prob gonna do an Ender 3 S1 next</p>
                 <div class="blog-images">
-                    <img src="assets/voxy3.jpg" alt="Voxy 3 Image 1">
+                    <img src="assets/voxy3.jpg" alt="VOXY 3 Image 1">
                 </div>
             </article>
         </div>
+    </section>
+
+    <!-- New Sections -->
+    <section id="requirements">
+        <h2 data-aos="fade-up">Requirements</h2>
+        <h3>Base Printer</h3>
+        <p>
+            The printer you are converting must have exposed extrusions and not covered-up ones.
+            This would apply to printers like the SE lineup of Enders.
+        </p>
+        <h3>Additional</h3>
+        <p>Klipper is recommended. However, Marlin is fine.</p>
+    </section>
+
+    <section id="needed-parts">
+        <h2 data-aos="fade-up">Needed Parts</h2>
+        <h3>Core XY</h3>
+        <ul>
+            <li>8x idler GT2 pulley with bearing</li>
+            <li>2x teethed idler GT2 pulley with bearing</li>
+            <li>GT2 pulley</li>
+        </ul>
+        <h3>Structure</h3>
+        <ul>
+            <li>1KG of your filament of choice (PETG-CF or ABS is recommended)</li>
+            <li>2x V-slot wheels</li>
+        </ul>
+    </section>
+
+    <section id="finished-info">
+        <h2 data-aos="fade-up">Finished Info</h2>
+        <p data-aos="fade-up">Details about the completed printer, including performance data, print quality, and results, cannot be provided as none have been built yet.</p>
+    </section>
+
+    <section id="faq">
+        <h2 data-aos="fade-up">FAQ</h2>
+        <p data-aos="fade-up">Frequently Asked Questions about the RE3MIX project. Example questions: "Can I use my old Ender 3 parts?", "What firmware does RE3MIX use?", etc.</p>
     </section>
 
     <section id="docs" class="centered-content">
@@ -161,7 +202,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Project Voxy. All rights reserved.</p>
+        <p>&copy; 2024 Project RE3MIX. All rights reserved.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

@@ -84,37 +84,6 @@ header {
     font-size: 1.5rem;
 }
 
-/* Blog Section with Horizontal Scroll for Images */
-.voxy-blog {
-    padding: 50px 20px;
-    background-color: var(--background-light);
-}
-
-.blog-post {
-    margin-bottom: 30px;
-}
-
-    .blog-post p {
-        font-size: 1.2rem;
-        color: black;
-    }
-
-.blog-images {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    max-height: 300px;
-}
-
-    .blog-images img {
-        height: 200px;
-        border-radius: 10px;
-    }
-
-body.dark-mode .blog-post p {
-    color: var(--text-blog);
-}
-
 .nav-links {
     display: flex;
     list-style: none;
@@ -233,6 +202,76 @@ body.dark-mode #feature-details {
     background-color: var(--grey-dark);
 }
 
+/* Blog Section with Horizontal Scroll for Images */
+.voxy-blog {
+    padding: 50px 20px;
+    background-color: var(--background-light);
+}
+
+.blog-post {
+    margin-bottom: 30px;
+}
+
+    .blog-post p {
+        font-size: 1.2rem;
+        color: black;
+    }
+
+.blog-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    max-height: 300px;
+}
+
+    .blog-images img {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+body.dark-mode .blog-post p {
+    color: var(--text-blog);
+}
+
+/* New Sections: Requirements, Needed Parts, Finished Info, FAQ */
+section#requirements,
+section#needed-parts,
+section#finished-info,
+section#faq {
+    padding: 50px 20px;
+    background-color: var(--background-light);
+}
+
+    section#requirements h2, section#needed-parts h2, section#finished-info h2, section#faq h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: var(--primary-color);
+    }
+
+    /* Text will always be black */
+    section#requirements p, section#needed-parts ul, section#finished-info p, section#faq p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: black; /* Black text in both light and dark modes */
+    }
+
+    section#needed-parts ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+/* Dark Mode for New Sections */
+body.dark-mode section#requirements p,
+body.dark-mode section#needed-parts p,
+body.dark-mode section#finished-info p,
+body.dark-mode section#faq p {
+    color: black; /* Ensures black text in dark mode */
+}
+
+/* Centered Content Section */
+.centered-content {
+    text-align: center;
+}
 
 /* Contribute Section */
 .social-buttons {
@@ -256,6 +295,12 @@ body.dark-mode #feature-details {
             background-color: var(--secondary-color-dark);
             transform: translateY(-3px);
         }
+
+.divider {
+    height: 25px;
+    width: 2px;
+    background-color: white;
+}
 
 /* Contact Us Section */
 #contact {
