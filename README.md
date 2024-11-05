@@ -1,13 +1,13 @@
-# Project VOXY: CoreXY Conversion for Ender 3-Based Printers
+# Project RE3MIX: Conversions for Ender 3-Based Printers
 
-**Project VOXY** is an open-source initiative designed to convert Ender 3-based 3D printers into CoreXY systems. This mod leverages mostly stock parts, supplemented by off-the-shelf 6mm GT2 belt systems and 3D-printable components. Inspired by the Voron 2.4, Project VOXY offers an affordable solution for serious rapid prototyping and development or printing in general.
+**VOXY** is an open-source initiative designed to convert Ender 3-based 3D printers into CoreXY systems. This mod leverages mostly stock parts, supplemented by off-the-shelf 6mm GT2 belt systems and 3D-printable components. Inspired by the Voron 2.4, Project VOXY offers an affordable solution for serious rapid prototyping and development or printing in general.
 
 ## Features
 
 - **CoreXY Kinematics**: Elevate your 3D printer's capabilities with CoreXY mechanics, allowing for faster and more accurate prints.
 - **Belt-Driven Z-Axis**: A cost-effective, single motor system drives the Z-axis for smoother operation.
 - **Integrated Enclosure**: Designed for easy customization, with option part to hold up clear tarp to act as an enclosure while being transparent and affordability, improving print quality by maintaining a stable environment.
-- **Flexible Firmware Options**: Still compatible with Marlin and Klipper, which can providing advanced features like input shaping to bring out hte true potential.
+- **Flexible Firmware Options**: Still compatible with Marlin and Klipper, which can providing advanced features like input shaping to bring out the true potential.
 - **Modular Design**: Easily upgradeable, with support for stock, V6, Volcano and Spider hotends, BLTouch, and more.
 
 ## Getting Started
@@ -15,7 +15,7 @@
 ### Prerequisites
 
 - **Compatible 3D Printer**: Ender 3, Ender 3 Pro, Ender 3 V2, or similar.
-- **Motherboard**: Stock/BTT SKR E3 V3 with a Pi4 B 
+- **Motherboard**: Stock/BTT SKR E3 V3 w/ Pi4 B 
 - **Materials Needed**: PETG/+ filament, 6mm GT2 belts, pulleys, aluminum extrusions and optional but highly recommened linear rails.
 
 ### Parts List
@@ -37,11 +37,10 @@
    - For Marlin: Use the provided configuration files and or modify to suit your need.
    - For Klipper: Set up the Raspberry Pi and flash the appropriate firmware and web interface.
 5. **(Optional) Assemble Enclosure**: Optionally, create the enclosure using clear tarp or other materials and the bracket and mounts provided in `/STL`.
-## Usage
+   
+## Why choose RE3MIX?
 
-After completing the conversion, your printer will operate as a CoreXY system. For optimal performance:
-- **Level the bed** using a BLTouch or manual mesh leveling.
-- **Tune print settings**: Adjust print speeds, acceleration, and input shaping if using Klipper.
+RE3MIX is aimed a the cheapest possible conversion to make a for a cheap speed increase for the machine that can't quite keep up with the modern speed and acelleration. Currently, we are working on a core-xy and in the future we would be working on a cross-xy design.
 
 ## Contributing
 
